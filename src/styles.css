@@ -1,0 +1,87 @@
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+h2 {
+    margin-top: 50px;
+    text-align: center; /* Center the heading */
+  }
+  a {
+    display: inline-block; /* Allows margin and width control */
+    margin-top: 50px;
+    text-align: center; /* Ensures text inside the element is centered */
+    width: 100%; /* Or a specific width, depending on your layout */
+}
+#main{
+    background-color: rgb(211, 67, 67);
+    padding: 10px;
+    text-align: center;
+    margin: 50px 100px;
+    color: #ccc;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#drop-area {
+    background-color: rgb(211, 67, 67);
+    height: 100%;
+    width: 100%;
+    padding: 80px;
+    border: 1px dashed white;
+    text-align: center;
+    color: #ccc;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #drop-area.hover {
+    border-color: #333;
+    color: #333;
+  }
+  #drop-area label {
+    display: inline-block;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #fileInput {
+    display: none;
+  }

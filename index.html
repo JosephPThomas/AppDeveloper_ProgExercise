@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Developer Interview</title>
+    <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+    <h2>Upload JSON File</h2>
+    <div id="main">
+        <div id="drop-area">
+            <form id="uploadForm" enctype="multipart/form-data">
+                <label for="fileInput">Choose File</label>
+                <p>or drop file here</p>
+                <input type="file" id="fileInput" name="file" accept=".json, .pdf, .txt">
+            </form>
+        </div>
+    </div>
+    <script src="./src/upload.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "appdeveloper_progexercise",
+  "version": "1.0.0",
+  "description": "Using the language of your choice, write a small application (a console application is sufficient) that:",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^2.1.1"
+  }
+}

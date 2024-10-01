@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Developer Interview</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Choose the task</h2>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Count of Completed Training')" id="defaultOpen">Count of Completed Training</button>
+        <button class="tablinks" onclick="openCity(event, 'Completed Training in the Fiscal Year')">Completed Training in the Fiscal Year</button>
+        <button class="tablinks" onclick="openCity(event, 'Training Expiry')">Training Expiry</button>
+      </div>
+      
+      <div id="Count of Completed Training" class="tabcontent">
+        <h3>Count of Completed Training</h3>
+        <button onclick="getCompletedTrainingCount()">Download the Count (Json File)</a>
+      </div>
+      
+      <div id="Completed Training in the Fiscal Year" class="tabcontent">
+        <h3>Completed Training in the Fiscal Year</h3>
+        <label for="year">Year</label><br>
+        <input type="text" name = "year" id="year"><br><br>
+        <label for="training">Trainings (Seperate by coma)</label><br>
+        <input type="text" name = "training" id="training">
+        <button onclick="getPeopleByFiscalYear()">Submit</button>
+      </div>
+      
+      <div id="Training Expiry" class="tabcontent">
+        <h3>Training Expiry</h3>
+        <label for="expiry">Date</label><br>
+        <input type="date" name = "expiry" id="expiry" onfocusout="getExpiringTrainings()">
+      </div><br>
+      <a href="../index.html" onclick="clearUploadedData()">Upload Another JSON File</a>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        
+        document.getElementById("defaultOpen").click();
+      </script>
+      <script src="./data_filter.js"></script>
+</body>
+</html>
