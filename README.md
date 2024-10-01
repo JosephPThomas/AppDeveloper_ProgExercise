@@ -18,3 +18,6 @@ Using the language of your choice, write a small application (a console applicat
 * The app should work with **any data in the specified format**.
 * The app should be **checked into a publicly accessible Github or Azure Devops repository that the reviewers can pull and run**, without any modification.
 * In addition to the application code, your repository should contain the three output .Json files.
+
+## Access Application
+ * You are able to interact with the live application using the link: (https://josephpthomas.github.io/AppDeveloper_ProgExercise/index.html)
